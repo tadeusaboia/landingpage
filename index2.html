@@ -1,0 +1,1818 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#294c40">
+  <meta name="description" content="Conheça a trajetória de Francisco Tadeu Sabóia Rodrigues: infraestrutura de TI, segurança, data centers e inteligência artificial. Chefe de Infraestrutura de TI na CTINF/SESED-RN.">
+  <meta property="og:title" content="Tadeu Sabóia — Tecnologia & Infraestrutura">
+  <meta property="og:description" content="Experiência no serviço público, infraestrutura sólida e visão de futuro. Conheça minha trajetória profissional.">
+  <meta property="og:type" content="website">
+  <title>Tadeu Sabóia — Tecnologia & Infraestrutura</title>
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NiA5NiI+PHJlY3Qgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiByeD0iMjAiIGZpbGw9IiMyOTRjNDAiLz48dGV4dCB4PSIyMCIgeT0iNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCxzYW5zLXNlcmlmIiBmb250LXNpemU9IjUzIiBmb250LXdlaWdodD0iNTAwIiBsZXR0ZXItc3BhY2luZz0iLTUiIGZpbGw9IiNmNmY4ZjAiPnRzPC90ZXh0PjxjaXJjbGUgY3g9Ijc3IiBjeT0iNjMiIHI9IjQiIGZpbGw9IiNiMWM4OTciLz48L3N2Zz4K" type="image/svg+xml">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&display=swap');
+:root {
+  --bg:#fafbf8;
+  --surface:#fff;
+  --ink:#202c25;
+  --muted:#747d76;
+  --green:#294c40;
+  --soft-green:#e9efea;
+  --line:#dfe4de;
+  --section:#f1f4ef;
+  --font:'DM Sans',Arial,sans-serif
+}
+* {
+  box-sizing:border-box
+}
+html {
+  scroll-behavior:smooth;
+  scroll-padding-top:105px
+}
+body {
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--font);
+  font-size:15px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased
+}
+a {
+  color:inherit;
+  text-decoration:none
+}
+button {
+  font:inherit;
+  cursor:pointer
+}
+button,a {
+  -webkit-tap-highlight-color:transparent
+}
+button:focus-visible,a:focus-visible {
+  outline:3px solid #8aa68e;
+  outline-offset:5px
+}
+img {
+  display:block;
+  max-width:100%
+}
+[hidden] {
+  display:none!important
+}
+.container {
+  width:min(1120px,calc(100% - 96px));
+  margin-inline:auto
+}
+.icon {
+  width:20px;
+  height:20px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.65;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  flex-shrink:0
+}
+.icon-library {
+  position:absolute;
+  width:0;
+  height:0;
+  overflow:hidden
+}
+.skip-link {
+  position:fixed;
+  z-index:100;
+  top:10px;
+  left:10px;
+  padding:10px 18px;
+  background:var(--green);
+  color:white;
+  transform:translateY(-150%)
+}
+.skip-link:focus {
+  transform:translateY(0)
+}
+.sr-only {
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+  border:0
+}
+.site-header {
+  position:sticky;
+  top:0;
+  background:rgba(250,251,248,.96);
+  backdrop-filter:blur(16px);
+  z-index:30;
+  border-bottom:1px solid var(--line)
+}
+.header-inner {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  height:88px;
+  gap:25px
+}
+.brand {
+  display:inline-flex;
+  align-items:center;
+  gap:13px;
+  font-weight:650;
+  letter-spacing:-.5px;
+  white-space:nowrap
+}
+.monogram {
+  font-size:22px;
+  letter-spacing:-2px;
+  border:1px solid #b8c9bc;
+  border-radius:8px;
+  width:40px;
+  height:40px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding-right:2px;
+  color:var(--green)
+}
+.monogram span {
+  color:#8b9f78
+}
+.brand-name {
+  font-size:16px
+}
+.desktop-nav {
+  display:flex;
+  gap:28px;
+  margin-left:auto;
+  margin-right:24px
+}
+.nav-link {
+  font-size:13px;
+  color:#707a72;
+  transition:color .2s;
+  position:relative
+}
+.nav-link:hover,.nav-link.current {
+  color:var(--green)
+}
+.nav-link.current:after {
+  content:'';
+  position:absolute;
+  bottom:-10px;
+  left:0;
+  width:16px;
+  height:2px;
+  background:var(--green)
+}
+.header-contact {
+  font-size:13px;
+  font-weight:600;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:var(--green)
+}
+.header-contact .icon {
+  width:17px;
+  height:17px
+}
+.menu-toggle {
+  display:none;
+  border:0;
+  background:transparent;
+  padding:8px;
+  width:38px;
+  height:38px
+}
+.menu-toggle span {
+  display:block;
+  height:1.5px;
+  background:var(--ink);
+  margin:6px 0;
+  transition:transform .2s
+}
+.menu-toggle[aria-expanded=true] span:first-child {
+  transform:translateY(3.75px) rotate(45deg)
+}
+.menu-toggle[aria-expanded=true] span:last-child {
+  transform:translateY(-3.75px) rotate(-45deg)
+}
+.mobile-nav {
+  background:var(--bg);
+  border-top:1px solid var(--line);
+  padding:16px 24px 24px;
+  display:flex;
+  flex-direction:column;
+  gap:16px
+}
+.hero {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:70px;
+  padding-block:75px 72px
+}
+.hero-copy {
+  flex:1;
+  min-width:0;
+  padding-top:4px
+}
+.eyebrow {
+  font-size:10px;
+  letter-spacing:2px;
+  font-weight:650;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  color:var(--green)
+}
+.status-dot {
+  width:6px;
+  height:6px;
+  background:#6c8c65;
+  border-radius:100%;
+  box-shadow:0 0 0 4px #eaf0e5;
+  flex-shrink:0
+}
+h1,h2,h3,p {
+  margin-top:0
+}
+h1 {
+  font-size:clamp(65px,6.8vw,88px);
+  letter-spacing:-5.2px;
+  line-height:1.035;
+  font-weight:550;
+  margin:24px 0 22px
+}
+.accent {
+  color:#739169
+}
+.hero-role {
+  font-size:18px;
+  font-weight:500;
+  letter-spacing:-.35px;
+  margin-bottom:13px;
+  color:var(--green)
+}
+.hero-description {
+  max-width:450px;
+  font-size:15px;
+  color:var(--muted);
+  line-height:1.8;
+  margin-bottom:27px
+}
+.hero-actions {
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px
+}
+.button {
+  min-height:48px;
+  padding:12px 20px;
+  border-radius:6px;
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  gap:15px;
+  font-size:12px;
+  font-weight:550;
+  line-height:1.4;
+  transition:background .2s,transform .2s,border-color .2s
+}
+.button:hover {
+  transform:translateY(-2px)
+}
+.button .icon {
+  width:17px;
+  height:17px
+}
+.button-primary {
+  color:#fff;
+  background:var(--green);
+  border:1px solid var(--green)
+}
+.button-primary:hover {
+  background:#1b392e
+}
+.button-outline {
+  border:1px solid #cfd7cc;
+  background:transparent;
+  color:var(--ink)
+}
+.button-outline:hover {
+  border-color:var(--green);
+  background:#f0f4ee
+}
+.location {
+  display:flex;
+  align-items:center;
+  gap:6px;
+  color:#858c85;
+  font-size:11px;
+  margin:26px 0 0
+}
+.location .icon {
+  width:14px;
+  height:14px
+}
+.location-line {
+  width:13px;
+  height:1px;
+  background:#b8c1b6;
+  margin-inline:5px
+}
+.hero-visual {
+  width:405px;
+  flex-shrink:0;
+  position:relative;
+  margin:3px 10px 14px 0
+}
+.portrait-frame {
+  height:455px;
+  border-radius:9px;
+  overflow:hidden;
+  position:relative;
+  background:#dde3d6
+}
+.portrait-frame:after {
+  content:'';
+  position:absolute;
+  inset:65% 0 0;
+  background:linear-gradient(transparent,rgba(17,30,21,.5));
+  pointer-events:none
+}
+.portrait-frame img {
+  height:100%;
+  width:100%;
+  object-fit:cover;
+  object-position:50% 43%
+}
+.portrait-caption {
+  position:absolute;
+  bottom:27px;
+  right:24px;
+  z-index:2;
+  color:#fff;
+  font-size:8px;
+  letter-spacing:2px;
+  display:flex;
+  align-items:center;
+  gap:7px
+}
+.caption-marker {
+  width:5px;
+  height:5px;
+  border-radius:100%;
+  background:#cad8be
+}
+.role-card {
+  position:absolute;
+  left:-24px;
+  bottom:-20px;
+  border-radius:8px;
+  background:var(--surface);
+  border:1px solid #e3e7df;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:18px 21px;
+  box-shadow:0 10px 30px rgba(31,55,36,.055);
+  z-index:3;
+  width:283px
+}
+.role-icon {
+  background:var(--soft-green);
+  border-radius:6px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:38px;
+  height:38px;
+  color:var(--green)
+}
+.role-card strong {
+  display:block;
+  font-size:12px;
+  font-weight:600
+}
+.role-card div>span {
+  font-size:10px;
+  color:var(--muted);
+  letter-spacing:.4px
+}
+.card-arrow {
+  margin-left:auto;
+  width:15px;
+  height:15px;
+  color:#8a9785
+}
+.photo-corner {
+  position:absolute;
+  top:-13px;
+  right:-14px;
+  width:54px;
+  height:54px;
+  border-top:1px solid #aebfa8;
+  border-right:1px solid #aebfa8;
+  border-top-right-radius:10px
+}
+.credentials-strip {
+  display:flex;
+  justify-content:space-between;
+  gap:28px;
+  padding-block:27px 29px;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line)
+}
+.credentials-strip>div {
+  flex:1
+}
+.credentials-strip>div+div {
+  border-left:1px solid var(--line);
+  padding-left:45px
+}
+.credential-label {
+  display:block;
+  font-size:9px;
+  letter-spacing:1.45px;
+  font-weight:550;
+  color:#7c897b;
+  margin-bottom:6px
+}
+.credentials-strip strong {
+  display:block;
+  font-size:17px;
+  font-weight:550;
+  letter-spacing:-.3px;
+  white-space:nowrap
+}
+.credentials-strip strong span {
+  font-size:11px;
+  font-weight:400;
+  color:var(--muted);
+  margin-left:7px;
+  letter-spacing:0
+}
+.section {
+  padding-block:88px 90px
+}
+.section-label {
+  display:flex;
+  align-items:center;
+  gap:15px;
+  font-size:10px;
+  letter-spacing:1.8px;
+  font-weight:550;
+  color:var(--green);
+  margin-bottom:27px
+}
+.section-number {
+  color:#94a08e;
+  font-size:9px;
+  letter-spacing:1px
+}
+h2 {
+  font-size:39px;
+  line-height:1.18;
+  font-weight:500;
+  letter-spacing:-1.6px;
+  margin-bottom:25px
+}
+.text-muted {
+  color:#83917f
+}
+.about-main {
+  display:flex;
+  gap:95px;
+  align-items:flex-start
+}
+.about-main h2 {
+  width:330px;
+  flex-shrink:0;
+  font-size:42px
+}
+.about-copy {
+  flex:1;
+  padding-top:2px;
+  color:#737d73;
+  font-size:14px
+}
+.about-copy p {
+  margin-bottom:17px;
+  line-height:1.85
+}
+.about-copy strong {
+  color:var(--ink);
+  font-weight:500
+}
+.about-values {
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px 22px;
+  border-top:1px solid var(--line);
+  padding-top:18px;
+  margin-top:23px
+}
+.about-values span {
+  display:flex;
+  align-items:center;
+  gap:6px;
+  font-size:10px;
+  color:#536752
+}
+.about-values .icon {
+  width:13px;
+  height:13px
+}
+.experience-section,.formation-section {
+  background:var(--section);
+  border-top:1px solid #e8ece5;
+  border-bottom:1px solid #e8ece5
+}
+.section-heading {
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:50px;
+  margin-bottom:32px
+}
+.section-heading h2 {
+  margin-bottom:0
+}
+.section-heading>p {
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.8;
+  max-width:260px;
+  margin-bottom:4px
+}
+.timeline {
+  margin-top:49px
+}
+.experience-item {
+  display:flex;
+  gap:65px;
+  padding-bottom:38px
+}
+.experience-item:last-child {
+  padding-bottom:0
+}
+.timeline-period {
+  width:232px;
+  flex-shrink:0;
+  position:relative;
+  padding-left:22px;
+  padding-top:2px
+}
+.timeline-period:after {
+  content:'';
+  position:absolute;
+  left:3px;
+  top:13px;
+  bottom:-45px;
+  width:1px;
+  background:#ccd7c7
+}
+.experience-item:last-child .timeline-period:after {
+  display:none
+}
+.timeline-dot {
+  position:absolute;
+  width:7px;
+  height:7px;
+  background:var(--green);
+  border-radius:100%;
+  left:0;
+  top:9px;
+  z-index:1;
+  box-shadow:0 0 0 5px var(--section)
+}
+.secondary-dot {
+  background:var(--section);
+  border:1.5px solid #86977d
+}
+.timeline-period strong {
+  display:block;
+  font-size:13px;
+  font-weight:550
+}
+.timeline-period>span:last-child {
+  font-size:10px;
+  color:#889283;
+  display:block;
+  margin-top:5px
+}
+.experience-content {
+  flex:1;
+  padding-bottom:35px;
+  border-bottom:1px solid #dce3d8
+}
+.experience-item:last-child .experience-content {
+  padding-bottom:0;
+  border-bottom:0
+}
+.organization {
+  font-size:9px;
+  font-weight:600;
+  letter-spacing:1.4px;
+  color:var(--green)
+}
+.job-topline {
+  display:flex;
+  align-items:center;
+  gap:15px;
+  margin-bottom:7px
+}
+.small-tag {
+  font-size:8px;
+  letter-spacing:.3px;
+  border:1px solid #ccdbcb;
+  border-radius:20px;
+  padding:2px 8px;
+  color:#62815b
+}
+h3 {
+  font-size:19px;
+  font-weight:550;
+  letter-spacing:-.45px;
+  line-height:1.35;
+  margin-bottom:8px
+}
+.experience-content h3 {
+  font-size:23px;
+  margin-top:6px
+}
+.job-subtitle {
+  font-size:11px;
+  color:#889080;
+  margin-bottom:19px
+}
+.experience-content>p:not(.job-subtitle) {
+  font-size:13px;
+  color:var(--muted);
+  line-height:1.85;
+  max-width:690px;
+  margin-bottom:17px
+}
+.responsibilities {
+  padding-left:17px;
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.8;
+  margin:0 0 23px
+}
+.responsibilities li {
+  padding-left:4px;
+  margin-bottom:7px
+}
+.responsibilities li::marker {
+  color:#7f9677;
+  font-size:9px
+}
+.skill-tags {
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px
+}
+.skill-tags span {
+  padding:4px 9px;
+  border:1px solid #dce4d6;
+  border-radius:4px;
+  font-size:9px;
+  color:#687c61;
+  line-height:1.4;
+  background:rgba(246,249,242,.6)
+}
+.skill-filters {
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  margin:35px 0 24px
+}
+.filter-button {
+  border:1px solid transparent;
+  background:transparent;
+  color:#798275;
+  padding:8px 15px;
+  border-radius:5px;
+  font-size:11px;
+  line-height:1.4;
+  transition:background .2s,color .2s
+}
+.filter-button:hover {
+  background:#eff3eb;
+  color:var(--green)
+}
+.filter-button.active {
+  background:var(--green);
+  color:white;
+  border-color:var(--green)
+}
+.skills-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:15px
+}
+.skill-card {
+  border:1px solid var(--line);
+  border-radius:8px;
+  background:var(--surface);
+  padding:24px 23px 25px;
+  min-height:241px;
+  display:flex;
+  flex-direction:column;
+  transition:border-color .2s,transform .2s
+}
+.skill-card:hover {
+  border-color:#b1c3aa;
+  transform:translateY(-3px)
+}
+.skill-card-top {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:24px;
+  color:#5a7352
+}
+.skill-card-top .icon {
+  width:24px;
+  height:24px;
+  stroke-width:1.5
+}
+.skill-card-top>span {
+  font-size:9px;
+  letter-spacing:1px;
+  color:#b0b9aa
+}
+.skill-card h3 {
+  font-size:16px;
+  margin-bottom:10px;
+  letter-spacing:-.3px
+}
+.skill-card>p {
+  font-size:12px;
+  line-height:1.8;
+  color:var(--muted);
+  margin-bottom:20px
+}
+.skill-card .skill-tags {
+  margin-top:auto;
+  gap:5px
+}
+.skill-card .skill-tags span {
+  font-size:8px;
+  padding:4px 7px
+}
+.education-layout {
+  display:flex;
+  gap:75px;
+  margin-top:41px
+}
+.education-list {
+  flex:1
+}
+.education-item {
+  display:flex;
+  gap:23px;
+  padding-bottom:30px;
+  margin-bottom:29px;
+  border-bottom:1px solid #dce3d8
+}
+.education-item:last-child {
+  border-bottom:0;
+  padding-bottom:0;
+  margin-bottom:0
+}
+.education-icon {
+  display:flex;
+  width:43px;
+  height:43px;
+  border:1px solid #d3decf;
+  border-radius:7px;
+  align-items:center;
+  justify-content:center;
+  color:#63805b;
+  flex-shrink:0
+}
+.education-item .credential-label {
+  font-size:8px;
+  letter-spacing:1.1px;
+  margin-bottom:10px
+}
+.education-item h3 {
+  font-size:21px;
+  margin-bottom:7px
+}
+.education-item p {
+  font-size:12px;
+  color:var(--muted);
+  margin-bottom:11px
+}
+.institution-tag {
+  font-size:9px;
+  color:#678260;
+  border:1px solid #d3dfce;
+  border-radius:4px;
+  padding:3px 8px
+}
+.language-card {
+  width:285px;
+  flex-shrink:0;
+  background:#f9fbf6;
+  border:1px solid #dce5d6;
+  border-radius:8px;
+  padding:26px
+}
+.language-card h3 {
+  font-size:21px;
+  margin:12px 0 16px
+}
+.language-row {
+  display:flex;
+  justify-content:space-between;
+  padding:11px 0;
+  border-top:1px solid #e3e8df;
+  font-size:12px
+}
+.language-row span:last-child {
+  font-size:9px;
+  color:#8b9a80;
+  letter-spacing:1px;
+  padding-top:2px
+}
+.language-card>p {
+  font-size:9px;
+  line-height:1.8;
+  color:#919989;
+  margin:12px 0 0
+}
+.contact-section {
+  padding-block:79px 58px
+}
+.contact-panel {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:50px;
+  border-radius:9px;
+  background:var(--green);
+  padding:45px 49px 42px;
+  color:#f5f8f0;
+  position:relative;
+  overflow:hidden
+}
+.contact-panel:after {
+  content:'';
+  position:absolute;
+  right:-78px;
+  top:-108px;
+  width:380px;
+  height:380px;
+  border:1px solid rgba(187,211,176,.1);
+  border-radius:50%;
+  pointer-events:none
+}
+.light-eyebrow {
+  color:#c7d7bc;
+  font-size:9px;
+  letter-spacing:1.6px;
+  margin-bottom:22px
+}
+.light-eyebrow .status-dot {
+  background:#b4ce97;
+  box-shadow:none;
+  width:5px;
+  height:5px
+}
+.contact-panel h2 {
+  font-size:35px;
+  line-height:1.24;
+  letter-spacing:-1.1px;
+  max-width:530px;
+  margin-bottom:15px
+}
+.contact-panel h2>span {
+  color:#b1c897
+}
+.contact-panel p {
+  color:#b7c9b0;
+  font-size:11px;
+  margin-bottom:0;
+  max-width:440px
+}
+.contact-actions {
+  width:198px;
+  flex-shrink:0;
+  position:relative;
+  z-index:2
+}
+.button-light {
+  background:#e7efdc;
+  color:var(--green);
+  width:100%;
+  font-size:11px;
+  padding:14px 17px
+}
+.button-light:hover {
+  background:#f3f8ed
+}
+.copy-email {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  border:0;
+  background:transparent;
+  color:#c7d4be;
+  font-size:9px;
+  width:100%;
+  padding:15px 4px 0
+}
+.copy-email .icon {
+  width:14px;
+  height:14px
+}
+.contact-actions .copy-status {
+  font-size:9px;
+  min-height:15px;
+  padding-top:7px;
+  color:#dde9d4
+}
+.contact-details {
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  font-size:11px;
+  color:#7a8774;
+  padding:20px 4px 0
+}
+.contact-details>span {
+  display:flex;
+  align-items:center;
+  gap:5px
+}
+.contact-details .icon {
+  width:13px;
+  height:13px
+}
+.contact-details a:hover {
+  text-decoration:underline
+}
+.footer {
+  border-top:1px solid var(--line);
+  padding-block:25px 28px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:25px
+}
+.footer-brand {
+  font-size:12px;
+  gap:10px
+}
+.footer .monogram {
+  width:31px;
+  height:31px;
+  font-size:18px;
+  border-radius:6px
+}
+.footer p {
+  font-size:9px;
+  color:#8b9486;
+  margin-bottom:0
+}
+.footer p span {
+  padding:0 8px;
+  color:#c0c8b9
+}
+.back-to-top {
+  font-size:9px;
+  color:#72866a;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  white-space:nowrap
+}
+.back-to-top .icon {
+  width:14px;
+  height:14px
+}
+@media(min-width:1400px) {
+  .container {
+    width:min(1160px,calc(100% - 120px))
+  }
+  .hero {
+    gap:100px
+  }
+  .hero-visual {
+    width:420px
+  }
+  .portrait-frame {
+    height:470px
+  }
+}
+@media(max-width:1100px) {
+  .container {
+    width:calc(100% - 64px)
+  }
+  .desktop-nav {
+    gap:20px;
+    margin-right:10px
+  }
+  .hero {
+    gap:45px
+  }
+  .hero-visual {
+    width:350px
+  }
+  .portrait-frame {
+    height:425px
+  }
+  .hero-description {
+    font-size:14px
+  }
+  .credentials-strip>div+div {
+    padding-left:25px
+  }
+  .credentials-strip strong span {
+    display:block;
+    margin:3px 0 0
+  }
+  .about-main {
+    gap:50px
+  }
+  .about-main h2 {
+    width:280px
+  }
+  .education-layout {
+    gap:40px
+  }
+  .timeline-period {
+    width:195px
+  }
+  .experience-item {
+    gap:40px
+  }
+  .contact-panel {
+    padding:38px
+  }
+}
+@media(max-width:880px) {
+  .header-inner {
+    height:73px
+  }
+  .desktop-nav {
+    display:none
+  }
+  .menu-toggle {
+    display:block
+  }
+  .header-contact {
+    margin-left:auto
+  }
+  .hero {
+    gap:32px;
+    padding-block:54px 62px;
+    align-items:center
+  }
+  h1 {
+    font-size:67px;
+    letter-spacing:-4px
+  }
+  .hero-role {
+    font-size:16px
+  }
+  .hero-visual {
+    width:290px;
+    margin-right:5px
+  }
+  .portrait-frame {
+    height:380px
+  }
+  .role-card {
+    width:245px;
+    padding:15px;
+    left:-14px;
+    bottom:-17px
+  }
+  .role-card strong {
+    font-size:11px
+  }
+  .portrait-caption {
+    font-size:7px;
+    right:18px;
+    bottom:21px;
+    letter-spacing:1.4px
+  }
+  .hero-description {
+    font-size:13px
+  }
+  .hero-actions {
+    gap:9px
+  }
+  .button {
+    padding:12px 14px;
+    font-size:10px;
+    gap:10px
+  }
+  .location {
+    font-size:10px;
+    flex-wrap:wrap
+  }
+  .section {
+    padding-block:65px
+  }
+  .section-heading>p {
+    max-width:210px;
+    font-size:12px
+  }
+  h2 {
+    font-size:34px
+  }
+  .about-main {
+    gap:35px
+  }
+  .about-main h2 {
+    font-size:34px;
+    width:230px
+  }
+  .about-copy {
+    font-size:13px
+  }
+  .skills-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr))
+  }
+  .credentials-strip strong {
+    font-size:16px
+  }
+  .credentials-strip>div+div {
+    padding-left:18px
+  }
+  .education-layout {
+    gap:25px
+  }
+  .language-card {
+    width:250px;
+    padding:21px
+  }
+  .education-item {
+    gap:16px
+  }
+  .education-item h3 {
+    font-size:19px
+  }
+  .contact-panel h2 {
+    font-size:29px
+  }
+  .contact-panel {
+    padding:32px;
+    gap:25px
+  }
+  .contact-actions {
+    width:175px
+  }
+  .footer p {
+    max-width:235px;
+    text-align:center
+  }
+  .timeline-period {
+    width:150px
+  }
+  .experience-item {
+    gap:25px
+  }
+  .experience-content h3 {
+    font-size:20px
+  }
+}
+@media(max-width:650px) {
+  .container {
+    width:calc(100% - 40px)
+  }
+  .header-inner {
+    height:68px;
+    gap:14px
+  }
+  .brand-name {
+    font-size:14px
+  }
+  .monogram {
+    width:34px;
+    height:34px;
+    font-size:20px
+  }
+  .brand {
+    gap:10px
+  }
+  .header-contact {
+    font-size:10px;
+    gap:5px
+  }
+  .header-contact .icon {
+    width:14px;
+    height:14px
+  }
+  .hero {
+    flex-direction:column;
+    align-items:stretch;
+    gap:38px;
+    padding-block:43px 56px
+  }
+  .hero-copy {
+    padding-top:0
+  }
+  .eyebrow {
+    font-size:8px;
+    letter-spacing:1.7px
+  }
+  h1 {
+    font-size:72px;
+    letter-spacing:-4.8px;
+    margin-top:21px;
+    margin-bottom:21px
+  }
+  .hero-role {
+    font-size:17px
+  }
+  .hero-description {
+    font-size:14px;
+    max-width:440px;
+    line-height:1.8;
+    margin-bottom:24px
+  }
+  .hero-actions .button {
+    padding:13px 17px;
+    font-size:11px;
+    gap:12px
+  }
+  .location {
+    margin-top:20px;
+    font-size:10px
+  }
+  .hero-visual {
+    width:calc(100% - 12px);
+    max-width:440px;
+    align-self:center;
+    margin:0 0 13px
+  }
+  .portrait-frame {
+    height:390px
+  }
+  .portrait-frame img {
+    object-position:50% 44%
+  }
+  .photo-corner {
+    top:-9px;
+    right:-10px;
+    width:37px;
+    height:37px
+  }
+  .role-card {
+    left:-7px;
+    bottom:-17px;
+    width:255px;
+    padding:15px 18px
+  }
+  .role-card strong {
+    font-size:12px
+  }
+  .portrait-caption {
+    right:17px;
+    bottom:22px;
+    font-size:7px;
+    letter-spacing:1.2px
+  }
+  .credentials-strip {
+    gap:13px;
+    padding-block:22px
+  }
+  .credential-label {
+    font-size:7px;
+    letter-spacing:1px
+  }
+  .credentials-strip strong {
+    font-size:13px;
+    line-height:1.5;
+    white-space:normal
+  }
+  .credentials-strip strong span {
+    font-size:9px;
+    margin-top:4px
+  }
+  .credentials-strip>div+div {
+    padding-left:12px
+  }
+  .section {
+    padding-block:52px 55px
+  }
+  .section-label {
+    font-size:9px;
+    letter-spacing:1.5px;
+    margin-bottom:23px;
+    gap:10px
+  }
+  .about-main {
+    display:block
+  }
+  .about-main h2 {
+    width:auto;
+    font-size:35px;
+    margin-bottom:26px
+  }
+  .about-copy {
+    font-size:13px
+  }
+  .about-values {
+    font-size:9px;
+    gap:12px 16px
+  }
+  .section-heading {
+    display:block;
+    margin-bottom:30px
+  }
+  .section-heading h2 {
+    font-size:34px;
+    letter-spacing:-1.3px
+  }
+  .section-heading>p {
+    max-width:320px;
+    margin:17px 0 0;
+    font-size:12px
+  }
+  .timeline {
+    margin-top:33px
+  }
+  .experience-item {
+    display:block;
+    padding-left:18px;
+    position:relative;
+    padding-bottom:30px
+  }
+  .experience-item:before {
+    content:'';
+    position:absolute;
+    left:3px;
+    top:11px;
+    bottom:0;
+    width:1px;
+    background:#ccd7c7
+  }
+  .experience-item:last-child:before {
+    display:none
+  }
+  .timeline-period {
+    padding:0 0 18px;
+    width:auto
+  }
+  .timeline-period:after {
+    display:none
+  }
+  .timeline-dot {
+    left:-18px;
+    top:8px
+  }
+  .timeline-period>span:last-child {
+    font-size:9px
+  }
+  .experience-content h3 {
+    font-size:20px
+  }
+  .experience-content {
+    padding-bottom:26px
+  }
+  .experience-content>p:not(.job-subtitle) {
+    font-size:12px
+  }
+  .responsibilities {
+    font-size:11px
+  }
+  .job-topline {
+    gap:11px
+  }
+  .skill-filters {
+    margin:25px 0 20px;
+    gap:5px
+  }
+  .filter-button {
+    font-size:10px;
+    padding:8px 10px
+  }
+  .skills-grid {
+    gap:12px
+  }
+  .skill-card {
+    padding:19px 17px 20px;
+    min-height:252px
+  }
+  .skill-card h3 {
+    font-size:14px;
+    line-height:1.4
+  }
+  .skill-card>p {
+    font-size:11px;
+    line-height:1.7
+  }
+  .skill-card-top {
+    margin-bottom:20px
+  }
+  .skill-card-top .icon {
+    width:21px;
+    height:21px
+  }
+  .skill-card .skill-tags span {
+    font-size:7px;
+    padding:3px 5px
+  }
+  .education-layout {
+    display:block;
+    margin-top:31px
+  }
+  .education-item {
+    gap:17px
+  }
+  .education-item h3 {
+    font-size:20px
+  }
+  .education-icon {
+    width:40px;
+    height:40px
+  }
+  .language-card {
+    width:100%;
+    margin-top:31px;
+    padding:24px
+  }
+  .language-card h3 {
+    font-size:20px
+  }
+  .language-card>p {
+    font-size:10px
+  }
+  .language-row {
+    font-size:12px
+  }
+  .contact-section {
+    padding-block:49px 35px
+  }
+  .contact-panel {
+    display:block;
+    padding:31px 25px 26px
+  }
+  .contact-panel h2 {
+    font-size:30px;
+    letter-spacing:-1px
+  }
+  .contact-panel p {
+    font-size:11px
+  }
+  .light-eyebrow {
+    font-size:8px;
+    letter-spacing:1.25px
+  }
+  .contact-actions {
+    width:100%;
+    margin-top:27px;
+    max-width:270px
+  }
+  .button-light {
+    min-height:47px;
+    font-size:11px
+  }
+  .copy-email {
+    font-size:10px;
+    padding-top:15px
+  }
+  .contact-actions .copy-status {
+    padding-top:5px;
+    min-height:19px
+  }
+  .contact-details {
+    flex-wrap:wrap;
+    font-size:10px;
+    gap:12px;
+    padding-top:17px;
+    word-break:break-word
+  }
+  .footer {
+    flex-wrap:wrap;
+    gap:17px;
+    padding-block:24px;
+    justify-content:space-between
+  }
+  .footer p {
+    order:3;
+    max-width:100%;
+    width:100%;
+    text-align:left;
+    font-size:8px
+  }
+  .footer-brand {
+    font-size:11px
+  }
+  .back-to-top {
+    font-size:9px
+  }
+}
+@media(max-width:370px) {
+  .container {
+    width:calc(100% - 32px)
+  }
+  .header-contact {
+    display:none
+  }
+  .menu-toggle {
+    margin-left:auto
+  }
+  .skills-grid {
+    grid-template-columns:1fr
+  }
+  .skill-card {
+    min-height:0
+  }
+  .hero-actions .button {
+    font-size:10px;
+    padding-inline:12px
+  }
+  .portrait-frame {
+    height:350px
+  }
+  .credentials-strip {
+    gap:8px
+  }
+  .credentials-strip strong {
+    font-size:12px
+  }
+  .contact-panel {
+    padding-inline:21px
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  html {
+    scroll-behavior:auto
+  }
+  *,*:before,*:after {
+    transition:none!important;
+    animation:none!important
+  }
+}
+@media print {
+  .site-header,.hero-visual,.hero-actions,.contact-section,.footer,.skill-filters,.skip-link {
+    display:none
+  }
+  .container {
+    width:100%
+  }
+  .hero,.section {
+    padding-block:20px
+  }
+  .hero {
+    display:block
+  }
+  h1 {
+    font-size:42px;
+    line-height:1.1;
+    letter-spacing:-2px
+  }
+  .hero h1 br {
+    display:none
+  }
+  .hero h1 br:after {
+    content:' '
+  }
+  .hero-role {
+    font-size:15px
+  }
+  .hero-description {
+    max-width:none
+  }
+  .credentials-strip {
+    padding-block:14px
+  }
+  .section-heading {
+    margin-bottom:20px
+  }
+  h2 {
+    font-size:23px
+  }
+  .about-main h2 {
+    font-size:23px;
+    width:200px
+  }
+  .about-main {
+    gap:25px
+  }
+  .experience-section,.formation-section {
+    background:white
+  }
+  .skills-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr))
+  }
+  .skill-card {
+    break-inside:avoid;
+    min-height:0;
+    padding:14px
+  }
+  .skill-card-top {
+    margin-bottom:10px
+  }
+  .skill-card>p {
+    margin-bottom:10px
+  }
+  .experience-item,.education-item {
+    break-inside:avoid
+  }
+  .section-label {
+    margin-bottom:12px
+  }
+  a {
+    color:inherit
+  }
+}
+
+</style>
+  <script>
+const menuToggle = document.querySelector('.menu-toggle');
+const mobileNav = document.querySelector('.mobile-nav');
+
+function closeMenu() {
+  if (!menuToggle || !mobileNav) return;
+  menuToggle.setAttribute('aria-expanded', 'false');
+  menuToggle.setAttribute('aria-label', 'Abrir menu');
+  mobileNav.hidden = true;
+}
+
+menuToggle?.addEventListener('click', () => {
+  if (!mobileNav) return;
+  const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+  menuToggle.setAttribute('aria-expanded', String(!isOpen));
+  menuToggle.setAttribute('aria-label', isOpen ? 'Abrir menu' : 'Fechar menu');
+  mobileNav.hidden = isOpen;
+});
+
+mobileNav?.querySelectorAll('a').forEach((link) => {
+  link.addEventListener('click', closeMenu);
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && menuToggle?.getAttribute('aria-expanded') === 'true') {
+    closeMenu();
+    menuToggle.focus();
+  }
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 880) closeMenu();
+});
+
+const filters = document.querySelectorAll('.filter-button');
+const cards = document.querySelectorAll('.skill-card');
+const filterStatus = document.querySelector('.filter-status');
+
+filters.forEach((filter) => {
+  filter.addEventListener('click', () => {
+    const category = filter.getAttribute('data-filter');
+    let visibleCount = 0;
+    filters.forEach((button) => {
+      const active = button === filter;
+      button.classList.toggle('active', active);
+      button.setAttribute('aria-pressed', String(active));
+    });
+    cards.forEach((card) => {
+      const categories = (card.getAttribute('data-category') || '').split(' ');
+      const visible = category === 'all' || categories.includes(category || '');
+      card.hidden = !visible;
+      if (visible) visibleCount += 1;
+    });
+    if (filterStatus) {
+      filterStatus.textContent = `${visibleCount} ${visibleCount === 1 ? 'área de competência exibida' : 'áreas de competência exibidas'}.`;
+    }
+  });
+});
+
+const navLinks = document.querySelectorAll('.nav-link');
+if ('IntersectionObserver' in window) {
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      navLinks.forEach((link) => {
+        const active = link.getAttribute('href') === `#${entry.target.id}`;
+        link.classList.toggle('current', active);
+        if (active) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
+    });
+  }, { rootMargin: '-15% 0px -65% 0px', threshold: 0 });
+  document.querySelectorAll('section[id]').forEach((section) => sectionObserver.observe(section));
+}
+
+const copyButton = document.querySelector('.copy-email');
+const copyStatus = document.querySelector('.copy-status');
+copyButton?.addEventListener('click', async () => {
+  const email = copyButton.getAttribute('data-email');
+  if (!email || !copyStatus) return;
+  try {
+    if (!navigator.clipboard) throw new Error('Clipboard unavailable');
+    await navigator.clipboard.writeText(email);
+    copyStatus.textContent = 'E-mail copiado. Pronto para conversar.';
+    window.setTimeout(() => { copyStatus.textContent = ''; }, 5000);
+  } catch {
+    copyStatus.textContent = `Copie o endereço: ${email}`;
+  }
+});
+
+</script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="arrow-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+    <symbol id="arrow-down" viewBox="0 0 24 24"><path d="M12 4v16m-6-6 6 6 6-6"/></symbol>
+    <symbol id="download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M5 16v4h14v-4"/></symbol>
+    <symbol id="pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></symbol>
+    <symbol id="server" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01M16 6.5h2M16 17.5h2"/></symbol>
+    <symbol id="terminal" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m6 9 3 3-3 3m7 0h4"/></symbol>
+    <symbol id="network" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="16" y="16" width="6" height="6" rx="1"/><path d="M12 8v4M5 16v-4h14v4"/></symbol>
+    <symbol id="shield" viewBox="0 0 24 24"><path d="m12 2 8 4v6c0 5-8 10-8 10S4 17 4 12V6l8-4Z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+    <symbol id="spark" viewBox="0 0 24 24"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5L12 3Z"/></symbol>
+    <symbol id="book" viewBox="0 0 24 24"><path d="M12 5c-3-3-8-2-10-1v15c3-1 7-1 10 1 3-2 7-2 10-1V4c-2-1-7-2-10 1Zm0 0v15"/></symbol>
+    <symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Tadeu Sabóia, início"><span class="monogram">ts<span>.</span></span><span class="brand-name">Tadeu Sabóia</span></a>
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a class="nav-link" href="#sobre">Sobre</a><a class="nav-link" href="#experiencia">Experiência</a><a class="nav-link" href="#competencias">Competências</a><a class="nav-link" href="#formacao">Formação</a>
+      </nav>
+      <a class="header-contact" href="#contato">Vamos conversar <svg class="icon"><use href="#arrow-up-right"/></svg></a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Navegação para celular" hidden><a href="#sobre">Sobre</a><a href="#experiencia">Experiência</a><a href="#competencias">Competências</a><a href="#formacao">Formação</a><a href="#contato">Contato</a></nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero container" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> TECNOLOGIA COM PROPÓSITO</div>
+        <h1 id="hero-title">Tadeu<br>Sabóia<span class="accent">.</span></h1>
+        <p class="hero-role">Infraestrutura de TI & segurança</p>
+        <p class="hero-description">Conectando infraestrutura, segurança e inovação no serviço público. Experiência técnica, visão estratégica e compromisso com a continuidade.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#contato">Entre em contato <svg class="icon"><use href="#arrow-up-right"/></svg></a><a class="button button-outline resume-download" href="curriculo.pdf" download="Curriculo-Tadeu-Saboia.pdf">Baixar currículo <svg class="icon"><use href="#download"/></svg></a></div>
+        <p class="location"><svg class="icon"><use href="#pin"/></svg> Natal, Rio Grande do Norte <span class="location-line"></span> Brasil</p>
+      </div>
+      <div class="hero-visual">
+        <div class="portrait-frame"><img src="foto.jpg" alt="Francisco Tadeu Sabóia Rodrigues em um ambiente de capacitação profissional" width="899" height="1599" fetchpriority="high"><div class="portrait-caption"><span class="caption-marker"></span> EXPERIÊNCIA QUE CONECTA</div></div>
+        <div class="role-card"><span class="role-icon"><svg class="icon"><use href="#server"/></svg></span><div><strong>Infraestrutura de TI</strong><span>CTINF · SESED-RN</span></div><svg class="icon card-arrow"><use href="#arrow-up-right"/></svg></div>
+        <span class="photo-corner" aria-hidden="true"></span>
+      </div>
+    </section>
+
+    <div class="container credentials-strip" aria-label="Destaques profissionais"><div><span class="credential-label">TRAJETÓRIA</span><strong>Desde 2006 <span>no serviço público</span></strong></div><div><span class="credential-label">LIDERANÇA TÉCNICA</span><strong>2010–2026 <span>em infraestrutura de TI</span></strong></div><div><span class="credential-label">ATUAÇÃO</span><strong>SESED-RN <span>tecnologia & segurança</span></strong></div></div>
+
+    <section class="section container about-section" id="sobre" aria-labelledby="about-title">
+      <div class="section-label"><span class="section-number">01 /</span> SOBRE MIM</div>
+      <div class="about-main"><h2 id="about-title">Base técnica.<br><span class="text-muted">Olhar humano.</span></h2><div class="about-copy"><p>Sou <strong>Francisco Tadeu Sabóia Rodrigues</strong>, profissional de tecnologia da informação e 2º Sargento da Polícia Militar do Rio Grande do Norte, com ingresso na instituição em 2006.</p><p>Atuo como chefe do Setor de Infraestrutura de TI da Coordenadoria de Tecnologia da Informação (CTINF) da SESED-RN. Minha trajetória reúne administração de ambientes críticos, segurança de TI e desenvolvimento de sistemas de inteligência artificial.</p><p>Minha formação em Filosofia pela UFRN complementa o repertório técnico com uma perspectiva analítica sobre tecnologia, pessoas e serviço público.</p><div class="about-values"><span><svg class="icon"><use href="#check"/></svg> Liderança técnica</span><span><svg class="icon"><use href="#check"/></svg> Continuidade operacional</span><span><svg class="icon"><use href="#check"/></svg> Visão analítica</span></div></div></div>
+    </section>
+
+    <section class="experience-section" id="experiencia" aria-labelledby="experience-title"><div class="container section">
+      <div class="section-label"><span class="section-number">02 /</span> EXPERIÊNCIA</div>
+      <div class="section-heading"><h2 id="experience-title">Uma trajetória de<br><span class="text-muted">responsabilidade.</span></h2><p>Experiência no serviço público e na gestão de infraestrutura tecnológica.</p></div>
+      <div class="timeline">
+        <article class="experience-item"><div class="timeline-period"><span class="timeline-dot"></span><strong>2010 — 2026</strong><span>Período informado no currículo</span></div><div class="experience-content"><div class="job-topline"><span class="organization">CTINF · SESED-RN</span><span class="small-tag">Atuação atual</span></div><h3>Chefe do Setor de Infraestrutura de TI</h3><p class="job-subtitle">Coordenadoria de Tecnologia da Informação</p><p>Atuação na infraestrutura tecnológica da Secretaria de Estado da Segurança Pública e da Defesa Social do Rio Grande do Norte, com administração de ambientes, serviços e recursos de TI.</p><ul class="responsibilities"><li>Administração de data centers tradicionais e hiperconvergentes, máquinas virtuais e servidores Linux e Windows.</li><li>Gestão técnica de serviços de identidade, redes, e-mail, DNS e telefonia VoIP.</li><li>Atuação em segurança de TI, backup, recuperação de arquivos e alta disponibilidade com SQL Server Always On.</li></ul><div class="skill-tags"><span>Infraestrutura</span><span>Administração de servidores</span><span>Alta disponibilidade</span></div></div></article>
+        <article class="experience-item"><div class="timeline-period"><span class="timeline-dot secondary-dot"></span><strong>Ingresso em 2006</strong><span>Vínculo profissional</span></div><div class="experience-content"><span class="organization">PMRN</span><h3>2º Sargento</h3><p class="job-subtitle">Polícia Militar do Rio Grande do Norte</p><p>Trajetória na segurança pública do Rio Grande do Norte, com atuação profissional na área de tecnologia da informação junto à SESED-RN.</p><div class="skill-tags"><span>Segurança pública</span><span>Serviço público</span></div></div></article>
+      </div>
+    </div></section>
+
+    <section class="section container" id="competencias" aria-labelledby="skills-title">
+      <div class="section-label"><span class="section-number">03 /</span> COMPETÊNCIAS</div><div class="section-heading"><h2 id="skills-title">Conhecimento que<br><span class="text-muted">sustenta a operação.</span></h2><p>Do ambiente físico aos serviços digitais, um repertório técnico conectado.</p></div>
+      <div class="skill-filters" role="group" aria-label="Filtrar competências"><button class="filter-button active" data-filter="all" aria-pressed="true">Todas</button><button class="filter-button" data-filter="infra" aria-pressed="false">Infraestrutura</button><button class="filter-button" data-filter="systems" aria-pressed="false">Sistemas & redes</button><button class="filter-button" data-filter="security" aria-pressed="false">Segurança & dados</button><button class="filter-button" data-filter="ai" aria-pressed="false">IA & inovação</button></div>
+      <div class="skills-grid">
+        <article class="skill-card" data-category="infra"><div class="skill-card-top"><svg class="icon"><use href="#server"/></svg><span>01</span></div><h3>Infraestrutura & virtualização</h3><p>Administração avançada de máquinas virtuais e ambientes de data center tradicionais e hiperconvergentes.</p><div class="skill-tags"><span>Máquinas virtuais</span><span>Data centers</span><span>Hiperconvergência</span></div></article>
+        <article class="skill-card" data-category="systems"><div class="skill-card-top"><svg class="icon"><use href="#terminal"/></svg><span>02</span></div><h3>Sistemas & identidade</h3><p>Administração avançada de servidores, sistemas operacionais e serviços de diretório.</p><div class="skill-tags"><span>Linux Server</span><span>Windows Server</span><span>Active Directory</span><span>Samba4</span></div></article>
+        <article class="skill-card" data-category="systems"><div class="skill-card-top"><svg class="icon"><use href="#network"/></svg><span>03</span></div><h3>Redes & comunicação</h3><p>Redes Linux e Windows, serviços de e-mail, DNS e telefonia baseada em infraestrutura Linux.</p><div class="skill-tags"><span>VoIP</span><span>Asterisk</span><span>DNS</span><span>E-mail</span></div></article>
+        <article class="skill-card" data-category="security"><div class="skill-card-top"><svg class="icon"><use href="#shield"/></svg><span>04</span></div><h3>Segurança & continuidade</h3><p>Análise de segurança de TI, administração de backups e recuperação avançada de arquivos.</p><div class="skill-tags"><span>Segurança de TI</span><span>Backup</span><span>Recuperação de arquivos</span></div></article>
+        <article class="skill-card" data-category="security"><div class="skill-card-top"><svg class="icon"><use href="#database"/></svg><span>05</span></div><h3>Dados & alta disponibilidade</h3><p>Administração de bancos de dados SQL Server com alta disponibilidade e recuperação de desastres.</p><div class="skill-tags"><span>SQL Server</span><span>Always On</span><span>Disaster recovery</span></div></article>
+        <article class="skill-card" data-category="ai infra"><div class="skill-card-top"><svg class="icon"><use href="#spark"/></svg><span>06</span></div><h3>IA & ambientes de aplicação</h3><p>Criação de sistemas de inteligência artificial e administração avançada de ambientes Docker.</p><div class="skill-tags"><span>Inteligência artificial</span><span>Docker</span></div></article>
+      </div><p class="filter-status sr-only" aria-live="polite">6 áreas de competência exibidas.</p>
+    </section>
+
+    <section class="formation-section" id="formacao" aria-labelledby="education-title"><div class="container section">
+      <div class="section-label"><span class="section-number">04 /</span> FORMAÇÃO</div><div class="section-heading"><h2 id="education-title">Aprender para<br><span class="text-muted">ampliar perspectivas.</span></h2><p>Formação acadêmica e capacitação que fazem parte da minha trajetória.</p></div>
+      <div class="education-layout"><div class="education-list"><article class="education-item"><span class="education-icon"><svg class="icon"><use href="#book"/></svg></span><div><span class="credential-label">GRADUAÇÃO · 2007–2010</span><h3>Filosofia</h3><p>Universidade Federal do Rio Grande do Norte</p><span class="institution-tag">UFRN</span></div></article><article class="education-item"><span class="education-icon"><svg class="icon"><use href="#shield"/></svg></span><div><span class="credential-label">CAPACITAÇÃO EM SEGURANÇA PÚBLICA</span><h3>Curso de Policiamento de Choque</h3><p>Formação complementar informada no currículo.</p></div></article></div><aside class="language-card"><span class="credential-label">COMUNICAÇÃO</span><h3>Idiomas</h3><div class="language-row"><span>Português</span><span>PT</span></div><div class="language-row"><span>Inglês</span><span>EN</span></div><div class="language-row"><span>Espanhol</span><span>ES</span></div><p>Idiomas informados no currículo. A proficiência varia entre fala, leitura e escrita.</p></aside></div>
+    </div></section>
+
+    <section class="contact-section container" id="contato" aria-labelledby="contact-title"><div class="contact-panel"><div><div class="eyebrow light-eyebrow"><span class="status-dot"></span> CONTATO PROFISSIONAL</div><h2 id="contact-title">Boas conexões<br>começam com uma conversa<span>.</span></h2><p>Para falar sobre tecnologia, infraestrutura e segurança da informação.</p></div><div class="contact-actions"><a class="button button-light" href="mailto:tadeu.saboia@defesasocial.rn.gov.br">Enviar um e-mail <svg class="icon"><use href="#arrow-up-right"/></svg></a><button class="copy-email" type="button" data-email="tadeu.saboia@defesasocial.rn.gov.br"><span>Copiar e-mail profissional</span><svg class="icon"><use href="#mail"/></svg></button><p class="copy-status" aria-live="polite"></p></div></div><div class="contact-details"><a href="mailto:tadeu.saboia@defesasocial.rn.gov.br">tadeu.saboia@defesasocial.rn.gov.br</a><span><svg class="icon"><use href="#pin"/></svg> Natal / RN</span></div></section>
+  </main>
+
+  <footer class="container footer"><a class="brand footer-brand" href="#inicio"><span class="monogram">ts<span>.</span></span><span>Tadeu Sabóia</span></a><p>Francisco Tadeu Sabóia Rodrigues <span>·</span> Currículo profissional</p><a class="back-to-top" href="#inicio">Voltar ao topo <svg class="icon"><use href="#arrow-up-right"/></svg></a></footer>
+</body>
+</html>
